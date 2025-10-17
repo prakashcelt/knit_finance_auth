@@ -480,7 +480,7 @@ You can import the following Postman collection to test the API:
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:5001/api"
+      "value": "https://knit-finance-auth.onrender.com/api"
     },
     {
       "key": "token",
@@ -511,6 +511,24 @@ Use the following tools to test the API:
 
 ### Example curl commands:
 
+**Production:**
+```bash
+# Register user
+curl -X POST https://knit-finance-auth.onrender.com/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"name":"John Doe","email":"john@example.com","password":"password123"}'
+
+# Login
+curl -X POST https://knit-finance-auth.onrender.com/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"john@example.com","password":"password123"}'
+
+# Get todos (replace TOKEN with actual JWT)
+curl -X GET https://knit-finance-auth.onrender.com/api/todos \
+  -H "Authorization: Bearer TOKEN"
+```
+
+**Development:**
 ```bash
 # Register user
 curl -X POST http://localhost:5001/api/auth/register \
