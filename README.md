@@ -216,6 +216,3 @@ REACT_APP_API_URL=https://api.yourdomain.com/api
 - **API_DOCUMENTATION.md** - Complete API reference with examples
 - **Postman Collection** - Ready-to-import API collection
 
-## License
-
-MIT License - see LICENSE file for details.
