@@ -8,7 +8,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "http://localhost:5001/api",
+      "value": "https://knit-finance-auth.onrender.com/api",
       "type": "string"
     },
     {

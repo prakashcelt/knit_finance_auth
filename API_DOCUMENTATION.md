@@ -4,8 +4,22 @@ This document provides comprehensive API documentation for the Auth Knit backend
 
 ## Base URL
 
+**Production:**
+```
+https://knit-finance-auth.onrender.com/api
+```
+
+**Development:**
 ```
 http://localhost:5001/api
+```
+
+## Environment Variables
+
+For frontend applications, set the following environment variable:
+
+```
+REACT_APP_API_URL=https://knit-finance-auth.onrender.com/api
 ```
 
 ## Authentication
